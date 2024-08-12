@@ -163,7 +163,9 @@ Example HTML details:
 
 源码阅读笔记
 ------------
+
 - 参数设置
+
 ```
   GcovrConfigOption(
                 "gcov_cmd",
@@ -182,6 +184,7 @@ Example HTML details:
 ```
 
 - 解析 gcda 文件
+
 ```
 # gcovr/formats/gcov/read.py
 
@@ -195,6 +198,7 @@ def run_gcov_and_process_files(
 ```
 
 - 生成 html 报告
+
 ```
 # gcovr/formats/html/write.py
 #
