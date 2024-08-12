@@ -189,7 +189,6 @@ Example HTML details:
 ::
 
 # gcovr/formats/gcov/read.py
-
 def run_gcov_and_process_files(
     abs_filename: str,
     covdata: CovData,
@@ -202,7 +201,6 @@ def run_gcov_and_process_files(
 - 生成 html 报告
 
 .. code:: python
-
 # gcovr/formats/html/write.py
 #
 # Produce an HTML report
