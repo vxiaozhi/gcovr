@@ -188,24 +188,25 @@ Example HTML details:
 
 ::
 
-# gcovr/formats/gcov/read.py
-def run_gcov_and_process_files(
-    abs_filename: str,
-    covdata: CovData,
-    options: Options,
-    error: Callable[[str], None],
-    chdir: str,
-) -> bool:
+   # gcovr/formats/gcov/read.py
+   def run_gcov_and_process_files(
+       abs_filename: str,
+       covdata: CovData,
+       options: Options,
+       error: Callable[[str], None],
+       chdir: str,
+   ) -> bool:
 
 
 - 生成 html 报告
 
 .. code:: python
-# gcovr/formats/html/write.py
-#
-# Produce an HTML report
-#
-def write_report(covdata: CovData, output_file: str, options: Options) -> None:
+
+   # gcovr/formats/html/write.py
+   #
+   # Produce an HTML report
+   #
+   def write_report(covdata: CovData, output_file: str, options: Options) -> None:
 
 
 Installation
