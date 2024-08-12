@@ -166,7 +166,8 @@ Example HTML details:
 
 - 参数设置
 
-```
+::
+
   GcovrConfigOption(
                 "gcov_cmd",
                 ["--gcov-executable"],
@@ -181,11 +182,12 @@ Example HTML details:
                 ),
                 default=os.environ.get("GCOV", "gcov"),
             ),
-```
+
 
 - 解析 gcda 文件
 
-```
+::
+
 # gcovr/formats/gcov/read.py
 
 def run_gcov_and_process_files(
@@ -195,17 +197,18 @@ def run_gcov_and_process_files(
     error: Callable[[str], None],
     chdir: str,
 ) -> bool:
-```
+
 
 - 生成 html 报告
 
-```
+::
+
 # gcovr/formats/html/write.py
 #
 # Produce an HTML report
 #
 def write_report(covdata: CovData, output_file: str, options: Options) -> None:
-```
+
 
 Installation
 ------------
