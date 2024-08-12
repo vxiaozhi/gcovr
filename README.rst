@@ -201,7 +201,7 @@ def run_gcov_and_process_files(
 
 - 生成 html 报告
 
-::
+.. code:: python
 
 # gcovr/formats/html/write.py
 #
